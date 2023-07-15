@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+  <title>Tic Tac Toe</title>
+</head>
+<body>
+  <div id="header">
+    <h1>Tic Tac Toe</h1>
+  </div>
+  
+  <div id="symbol-choice">
+    <label for="symbol">Choose your symbol:</label>
+    <select id="symbol">
+      <option value="X">X</option>
+      <option value="O">O</option>
+    </select>
+  </div>
+
+  <div id="current-player">
+    Current Player: X
+  </div>
+
+  <div id="turn-announcement"></div>
+  
+  <div id="board">
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+  </div>
+
+  <div class="popup" id="result-popup">
+    <div class="popup-content">
+      <h2 id="result-message"></h2>
+      <button onclick="resetBoard()">Play Again</button>
+    </div>
+  </div>
+  <div id="footer">
+    <span>Copyright &copy; <span id="current-year"></span></span>
+    <span>BasirOo</span>
+    <a href="https://github.com/BasirO" target="_blank" rel="noopener noreferrer">
+        <img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.5.0/svg/mark-github.svg" alt="GitHub" width="24" height="24">
+      GitHub
+    </a>
+  </div>
+
+  <script>
+    var currentYear = new Date().getFullYear();
+    document.getElementById('current-year').textContent = currentYear;
+  </script>
+  <script src="script.js">
+    
+  </script>
+</body>
+</html>
