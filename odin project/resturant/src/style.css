@@ -1,0 +1,111 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+   
+  }
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0.5rem;
+    background-color: #161616;
+    color: #fff;
+  }
+  .restaurant {
+    margin-bottom: 1rem;
+    font-family: 'Tangerine', cursive;
+    font-size: 10rem;
+  }
+button {
+    font-family: inherit;
+    color: inherit;
+    cursor: pointer;
+    border-style: none;
+    outline: none;
+  }
+  .nav-button {
+    padding: 1rem;
+    font-size: 1.3rem;
+    background-color: transparent;
+    border-bottom: 2px solid transparent;
+    transition: transform 0.3s;
+  }
+  
+  .nav-button .active {
+    border-bottom: 2px solid var(--font-color);
+  }
+  
+  .nav-button:hover {
+    transform: translateY(-10%);
+  }
+  
+  /* Main */
+  
+  .main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    padding: 4rem;
+   
+    font-size: 2rem;
+  }
+  .burger{
+border-radius: 50%;
+ 
+
+  
+  }
+  .home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    height: 640px;
+    width: 618px;
+    animation: fadeIn 1.5s;
+    border-radius: 38px;
+background: #ebebeb;
+box-shadow:  18px 18px 34px #cfcfcf,
+             -18px -18px 34px #ffffff;
+  }
+  .home .burger{
+    width: 50%;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    opacity: 90%;
+  }
+  .home p{
+    text-align: center;
+  }
+  .card{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .card >*{
+    flex: 1 1 200px;
+  }
+ .card-text{
+    font-size: medium;
+ }
+ .card-body{
+  cursor: pointer;
+ }
+.card-img-top{
+    padding-bottom: 10px;
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid gray;
+    padding: 15px;
+    border-radius: 58px 0px;
+    padding-bottom: 100px;
+}
