@@ -1,0 +1,70 @@
+body{
+  box-sizing: border-box;
+background-color: #007BFF;
+}
+h2{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 40px;
+   font-weight: bolder;
+   color: #eee;
+} 
+button,
+input {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 5px;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  outline: none;
+  border-bottom: 1px solid lightgray;
+}
+
+button {
+  cursor: pointer;
+}
+.input {
+  margin-right: 0.5rem;
+  background-color: #eee;
+  color: #230;
+  border: 2px solid transparent;
+}
+
+.btn {
+  background-color: #1e212d;
+  color: #faf3e0;
+  transition: border 0.2s ease-in-out;
+  border: 2px solid transparent;
+}
+
+.btn:hover {
+  border: 2px solid #acb4f4;
+}
+.form {
+  padding: 1rem;
+  text-align: center;
+}
+.btn:active {
+  color: #999;
+}
+.searchResult{
+  display: none;
+  max-width: 300px;
+  padding: 2rem;
+  border-radius: 5px;
+  margin: 4rem auto;
+  background-color: rgba(30, 33, 45, 1);
+  color: #eee;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.searchResult.active{
+  display: block;
+}
+h3{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
